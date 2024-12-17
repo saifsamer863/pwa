@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size:cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    object-fit: cover;
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 500px;
+    
+    
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url=('gpic/cont1 (1).jpg');
+}
+.card[for="c2"] { 
+    background-image: url('gpic/cont1 (2).jpg');
+}
+.card[for="c3"] {
+    background-image: url('gpic/cont1 (3).jpg');
+}
+.card[for="c4"] {
+    background-image: url('gpic/cont1 (4).jpg');
+}
+.card[for="c5"] {
+    background-image: url('gpic/cont1 (5).jpg');
+}
+.card[for="c6"] {
+    background-image: url('gpic/cont1 (6).jpg');
+}
+.card[for="c7"] {
+    background-image: url('gpic/cont1 (7).jpg');
+}
+
+
+
+/*cunt 2 */ 
+
+.card[for="c8"] {
+    background-image: src('gpic/cont2 (1).jpg');
+}
+
+.card[for="c9"] {
+    background-image: url('gpic/cont2 (2).jpg');
+}
+
+.card[for="c10"] {
+    background-image: url('gpic/cont2 (3).jpg');
+}
+
+.card[for="c11"] {
+    background-image: url('gpic/cont2 (4).jpg');
+}
+
+.card[for="c12"] {
+    background-image: url('gpic/cont2 (5).jpg');
+}
+
+.card[for="c13"] {
+    background-image: url('gpic/cont2 (6).jpg');
+}
+
+.card[for="c14"] {
+    background-image: url('gpic/cont2 (7).jpg');
+
+}
+
+/*cunt 3*/ 
+
+.card[for="c15"] {
+    background-image: url('gpic/cont3 (1).jpg');
+}
+.card[for="c16"] {
+    background-image: url('gpic/cont3 (2).jpg');
+}
+.card[for="c17"] {
+    background-image: url('gpic/cont3 (3).jpg');
+}
+.card[for="c18"] {
+    background-image: url('gpic/cont3 (4).jpg');
+}
+.card[for="c19"] {
+    background-image: url('gpic/cont3 (5).jpg');
+}
+.card[for="c20"] {
+    background-image: url('gpic/cont3 (6).jpg');
+}
+.card[for="c21"] {
+    background-image: url('gpic/cont3 (7).jpg');
+}
+
+/*cunt 4*/ 
+
+.card[for="c22"] {
+    background-image: url('gpic/cont4 (1).jpg');
+}
+.card[for="c23"] {
+    background-image: url('gpic/cont4 (2).jpg');
+}
+.card[for="c24"] {
+    background-image: url('gpic/cont4 (3).jpg');
+}
+.card[for="c25"] {
+    background-image: url('gpic/cont4 (4).jpg');
+}
+.card[for="c26"] {
+    background-image: url('gpic/cont4 (5).jpg');
+}
+.card[for="c27"] {
+    background-image: url('gpic/cont4 (6).jpg');
+}
+.card[for="c28"] {
+    background-image: url('gpic/cont4 (7).jpg');
+}
