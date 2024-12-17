@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="json/manifest.json" />
+  <link rel="stylesheet" href="css/gallery.css"/>
+  <link rel="stylesheet" href="css/nevbat.css"/>
+  <link rel="stylesheet" href="css/like.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"/>
+ 
+  <title>gallery</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+     
+    }
+    body {
+        background-color: #D2D2D2;
+        background-image: repeating-linear-gradient(
+            to right, transparent 0 100px,
+            #25283b22 100px 101px
+        ), repeating-linear-gradient(
+            to bottom, transparent 0 100px,
+            #25283b22 100px 101px
+        );
+    }
+    body::before {
+        position: absolute;
+        width: min(1400px, 90vw);
+        top: 10%;
+        left: 50%;
+        height: 90%;
+        transform: translateX(-50%);
+        content: '';
+        background-image: url("pic/mpage.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+<script src="js/pwa.js"></script> 
+<header>
+  <div class="nevbar">
+    <div class="logo"><a href="#">pic Da Vinci</a></div>
+    <ul class="links">
+      
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div> 
+  <div class="dropdown_menu">
+    <li><a href="home">Home</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="contact">Contact</a></li>
+  </div>  
+</header>
+<script src="js/nevbar.js"></script>
+<class = card[for="c1"] {
+  background-image:img src="pic/slaider (1).jpg" alt="";
+>
+<div class="wrapper">
+  <div class="container">
+      <input type="radio" name="slide" id="c1" checked>
+      <label for="c1" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c2" >
+      <label for="c2" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like2" name="reaction2"> 
+                  <label for="like2">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike2" name="reaction2">
+                      <label for="dislike2">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c3" >
+      <label for="c3" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like3" name="reaction3"> 
+                  <label for="like3">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike3" name="reaction3">
+                      <label for="dislike3">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c4" >
+      <label for="c4" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like4" name="reaction4"> 
+                  <label for="like4">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike4" name="reaction4">
+                      <label for="dislike4">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c5" >
+      <label for="c5" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like5" name="reaction5"> 
+                  <label for="like5">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike5" name="reaction5">
+                      <label for="dislike5">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c6" >
+      <label for="c6" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like6" name="reaction6"> 
+                  <label for="like6">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike6" name="reaction6">
+                      <label for="dislike6">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c7" >
+      <label for="c7" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like7" name="reaction7"> 
+                  <label for="like7">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike7" name="reaction7">
+                      <label for="dislike7">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+  </div>
+
+  
+
+</div>
+
+<div class="wrapper">
+  <div class="container">
+      <input type="radio" name="slide" id="c8" checked>
+      <label for="c8" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like8" name="reaction8"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike8" name="reaction8">
+                      <label for="dislike8">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c9" >
+      <label for="c9" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like9" name="reaction9"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike9" name="reaction9">
+                      <label for="dislike9">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c10" >
+      <label for="c10" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like10" name="reaction10"> 
+                  <label for="like10">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike10" name="reaction10">
+                      <label for="dislike10">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c11" >
+      <label for="c11" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like11" name="reaction11"> 
+                  <label for="like11">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike11" name="reaction11">
+                      <label for="dislike11">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c12" >
+      <label for="c12" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c13" >
+      <label for="c13" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c14" >
+      <label for="c14" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+  </div>
+
+  
+
+</div>
+
+<div class="wrapper">
+  <div class="container">
+      <input type="radio" name="slide" id="c15" checked>
+      <label for="c15" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c16" >
+      <label for="c16" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c17" >
+      <label for="c17" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c18" >
+      <label for="c18" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c19" >
+      <label for="c19" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c20" >
+      <label for="c20" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c21" >
+      <label for="c21" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+  </div>
+
+  
+
+</div>
+
+<div class="wrapper">
+  <div class="container">
+      <input type="radio" name="slide" id="c22" checked>
+      <label for="c22" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c23" >
+      <label for="c23" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c24" >
+      <label for="c24" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c25" >
+      <label for="c25" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c26" >
+      <label for="c26" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c27" >
+      <label for="c27" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c28" >
+      <label for="c28" class="card">
+        <div class="row">
+          <div class="description">
+            <div class="wrapperr">
+              <div class="radio_group">
+                  <input type="radio" id="like1" name="reaction1"> 
+                  <label for="like1">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+              </div>
+               <div class="radio_group"> 
+                    <input type="radio" id="dislike1" name="reaction1">
+                      <label for="dislike1">
+                       <i class="fa-solid fa-heart-crack"></i>
+                    </label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </label>
+  </div>
+
+  
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css"/>
+  <link rel="stylesheet" href="css/nevbat.css"/>
+  <link rel="manifest" href="json/manifest.json" />
+  <link rel="stylesheet" href="css/slider.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"/>
+ 
+  <title>home page</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+    body {
+        background-color: #D2D2D2;
+        background-image: repeating-linear-gradient(
+            to right, transparent 0 100px,
+            #25283b22 100px 101px
+        ), repeating-linear-gradient(
+            to bottom, transparent 0 100px,
+            #25283b22 100px 101px
+        );
+        
+    }
+    body::before {
+        position: absolute;
+        width: min(1400px, 90vw);
+        top: 10%;
+        left: 50%;
+        height: 90%;
+        transform: translateX(-50%);
+        content: '';
+        background-image: url("pic/mpage.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+<script src="js/pwa.js"></script> 
+<header>
+  <div class="nevbar">
+    <div class="logo"><a href="#">pic Da Vinci</a></div>
+    <ul class="links">
+      <li><a href="gallery">Gallery</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div> 
+  <div class="dropdown_menu">
+    <li><a href="gallery">Gallery</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+  </div>  
+</header>
+<h1 class="wll">wlcome in pic Da vinci </h1>
+<script src="js/nevbar.js"></script>
+<div class="banner">
+  <div class="slider" style="--quantity: 11">
+      <div class="item" style="--position: 1"><img src="pic/slaider (1).jpg" alt=""></div>
+      <div class="item" style="--position: 2"><img src="pic/slaider (2).jpg" alt=""></div>
+      <div class="item" style="--position: 3"><img src="pic/slaider (3).jpg" alt=""></div>
+      <div class="item" style="--position: 4"><img src="pic/slaider (4).jpg" alt=""></div>
+      <div class="item" style="--position: 5"><img src="pic/slaider (5).jpg" alt=""></div>
+      <div class="item" style="--position: 6"><img src="pic/slaider (6).jpg" alt=""></div>
+      <div class="item" style="--position: 7"><img src="pic/slaider (7).jpg" alt=""></div>
+      <div class="item" style="--position: 8"><img src="pic/slaider (8).jpg" alt=""></div>
+      <div class="item" style="--position: 9"><img src="pic/slaider (9).jpg" alt=""></div>
+      <div class="item" style="--position: 10"><img src="pic/slaider (10).jpg" alt=""></div>
+      <div class="item" style="--position: 11"><img src="pic/slaider (11).jpg" alt=""></div>
+  </div>
+</div>
+
+</body>
+</html>
