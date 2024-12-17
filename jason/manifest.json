@@ -1,0 +1,16 @@
+{
+    "name": "pic Da vinci",
+    "short_name": "picdavinci",
+    "start_url": "pic Da vinci/main/start page",
+    "display": "standalone",
+    "background_color": "#D2D2D2",
+    "theme_color": "#D2D2D2",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "gpic/cont4 (7).jpg",
+            "type": "image/png", "sizes": "600x800"
+          }
+
+    ]
+}    
